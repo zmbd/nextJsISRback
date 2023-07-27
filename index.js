@@ -19,6 +19,10 @@ const clients = [
     client: "newclient",
     content: "asdadadadadadada",
   },
+  {
+    client: "super",
+    content: "super duper",
+  },
 ];
 
 app.get("/clients", (req, res) => {
