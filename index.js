@@ -40,8 +40,8 @@ app.get("/clients", (req, res) => {
 app.post("/add", (req, res) => {
   const { client, content } = req.body;
 
-  if (value !== undefined) {
-    myArray.push(value);
+  if (client && content) {
+    myArray.push({ client: client, content: content });
     res.json({ message: "Element added to the array", array: myArray });
   } else {
     res.status(400).json({
