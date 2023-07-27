@@ -35,14 +35,6 @@ const clients = [
     client: "2",
     content: "asjndasjndjaskndjknasjk",
   },
-  {
-    client: "3",
-    content: "asjndasjndjaskndjknasjk",
-  },
-  {
-    client: "abc",
-    content: "91291292ndjsajndas",
-  },
 ];
 
 app.get("/clients", (req, res) => {
