@@ -37,6 +37,19 @@ app.get("/clients", (req, res) => {
   res.json(clients);
 });
 
+app.post("/add", (req, res) => {
+  const { value } = req.body;
+
+  if (value !== undefined) {
+    myArray.push(value);
+    res.json({ message: "Element added to the array", array: myArray });
+  } else {
+    res.status(400).json({
+      error: "Invalid request. Please provide a value in the request body.",
+    });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
