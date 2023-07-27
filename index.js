@@ -38,7 +38,7 @@ app.get("/clients", (req, res) => {
 });
 
 app.post("/add", (req, res) => {
-  const { value } = req.body;
+  const { client, content } = req.body;
 
   if (value !== undefined) {
     myArray.push(value);
