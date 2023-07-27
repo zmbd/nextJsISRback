@@ -27,6 +27,10 @@ const clients = [
     client: "losingmymind",
     content: "asjndasjndjaskndjknasjk",
   },
+  {
+    client: "xd",
+    content: "xD",
+  },
 ];
 
 app.get("/clients", (req, res) => {
