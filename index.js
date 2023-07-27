@@ -39,6 +39,10 @@ const clients = [
     client: "3",
     content: "asjndasjndjaskndjknasjk",
   },
+  {
+    client: "abc",
+    content: "91291292ndjsajndas",
+  },
 ];
 
 app.get("/clients", (req, res) => {
