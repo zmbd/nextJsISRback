@@ -1,4 +1,7 @@
 const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+
 const app = express();
 const port = 4848;
 
@@ -32,6 +35,9 @@ const clients = [
     content: "xD",
   },
 ];
+
+app.use(cors());
+app.use(bodyParser.json());
 
 app.get("/clients", (req, res) => {
   res.json(clients);
